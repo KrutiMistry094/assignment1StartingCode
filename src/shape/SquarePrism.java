@@ -1,6 +1,6 @@
 package shape;
 
-public class SquarePrism extends Prism 
+public abstract class SquarePrism extends Prism 
 {
 
 	public SquarePrism(double height, double side)

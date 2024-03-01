@@ -1,6 +1,6 @@
 package shape;
 
-public class Pyramid extends Prism
+public abstract class Pyramid extends Prism
 {
 
 	public Pyramid(double height, double side)

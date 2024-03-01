@@ -1,6 +1,6 @@
 package shape;
 
-public class TriangularPrism extends Prism
+public abstract class TriangularPrism extends Prism
 {
 
 	public TriangularPrism(double height, double side)

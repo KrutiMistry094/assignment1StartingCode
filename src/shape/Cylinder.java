@@ -1,6 +1,6 @@
 package shape;
 
-public class Cylinder extends Shape
+public abstract class Cylinder extends Shape
 {
 	private double radius;
 
@@ -42,5 +42,6 @@ public class Cylinder extends Shape
 	
 		return Math.PI * radius * radius;
 	}
+
 	
 }

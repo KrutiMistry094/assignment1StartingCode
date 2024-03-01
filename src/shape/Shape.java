@@ -1,8 +1,10 @@
 package shape;
 
-public abstract class Shape implements Comparable <Shape>
+import java.util.Comparator;
+
+public abstract class Shape implements Comparable <Shape>, Comparator<Shape>
 {
-	private double height;
+	double height;
 	
 	
 	public Shape(double height)
@@ -53,5 +55,17 @@ public abstract class Shape implements Comparable <Shape>
 		return "Shape [getHeight()=" + getHeight() + ", calcVolume()=" + calcVolume() + ", calcBaseArea()="
 				+ calcBaseArea() + "]";
 	}
+
+	
+	public int compareTO(Shape that) {
+		return Double.compare(this.height, that.getHeight());
+	}
+	
+	
+	public int compare(Shape that, Shape other) {
+		return 0;
+	}
+
+
 	
 }
